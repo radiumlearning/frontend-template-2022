@@ -1,4 +1,4 @@
-# BaSP - Trackgenix App codebase
+# BaSP - MegaRocket App codebase
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

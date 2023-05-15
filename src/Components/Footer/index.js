@@ -4,27 +4,31 @@ function Footer() {
   return (
     <footer className={styles.container}>
       <div className={styles.main}>
-        <div className={styles.appName}>
-          Track<span>GENIX</span>
-        </div>
+        <p className={styles.appName}>MegaRocket</p>
         <ul className={styles.rutes}>
           <li>
-            <a href="/admins">admins</a>
+            <a href={'/'}>Home</a>
           </li>
           <li>
-            <a href="/super-admins">super admins</a>
+            <a href={'/activities'}>Activities</a>
           </li>
           <li>
-            <a href="/employees">employees</a>
+            <a href={'/admins'}>Admins</a>
           </li>
           <li>
-            <a href="/projects">projects</a>
+            <a href={'/classes'}>Classes</a>
           </li>
           <li>
-            <a href="/time-sheets">timesheets</a>
+            <a href={'/members'}>Members</a>
           </li>
           <li>
-            <a href="/tasks">tasks</a>
+            <a href={'/subscriptions'}>Subscriptions</a>
+          </li>
+          <li>
+            <a href={'/super-admins'}>Super Admins</a>
+          </li>
+          <li>
+            <a href={'/trainers'}>Trainers</a>
           </li>
         </ul>
       </div>

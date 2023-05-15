@@ -1,22 +1,22 @@
 import { useEffect, useState } from 'react';
-import styles from './employees.module.css';
+import styles from './members.module.css';
 
-function Employees() {
-  const [employees, saveEmployees] = useState([]);
+function Members() {
+  const [members, setMembers] = useState([]);
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users`)
       .then((response) => response.json())
       .then((response) => {
-        saveEmployees(response);
+        setMembers(response);
       });
   }, []);
 
   return (
     <section className={styles.container}>
-      <h2>Employees</h2>
+      <h2>Members</h2>
       <div>
-        {employees.map((employee) => {
+        {members.map((employee) => {
           return <div key={employee.id}>{employee.name}</div>;
         })}
       </div>
@@ -24,4 +24,4 @@ function Employees() {
   );
 }
 
-export default Employees;
+export default Members;
